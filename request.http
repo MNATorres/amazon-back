@@ -1,0 +1,145 @@
+###
+POST http://localhost:9000/api/products HTTP/1.1
+Content-Type: application/json
+ 
+[
+     {
+        "image": "https://m.media-amazon.com/images/I/41couS+UODL._AC_UL320_.jpg",
+        "description": "Smart Plug de Amazon, para la automatización del hogar. Compatible con Alexa, Dispositivo certificado para humanos",
+        "calification": 5,
+        "numComments": 35,
+        "certification": true,
+        "alexa": true,
+        "certificationClimate": true,
+        "price": 50,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71nMzhO05jL._AC_UL320_.jpg",
+        "description": "Interruptor de luz inteligente Wi-Fi de Kasa por TP-Link – Control de iluminación desde cualquier lugar, fácil instalación en la pared (sólo polo), no...",
+        "calification": 5,
+        "numComments": 10,
+        "certification": true,
+        "alexa": true,
+        "certificationClimate": true,
+        "price": 29,
+        "starRatings": 4.7
+
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/61VxkyychvL._AC_UL320_.jpg",
+        "description": "Govee Bombillas inteligentes, WiFi Bluetooth que cambian de color, sincronización de música, 54 escenas dinámicas, 16 millones de colores de...",
+        "calification": 5,
+        "numComments": 7,
+        "certification": true,
+        "alexa": true,
+        "certificationClimate": true,
+        "price": 112,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/31J6OR1xMYL._AC_UL320_.jpg",
+        "description": "Echo Glow – Lámpara inteligente multicolor para niños, un dispositivo certificado para humanos – Requiere un dispositivo Alexa compatible",
+        "calification": 5,
+        "numComments": 19,
+        "certification": true,
+        "alexa": true,
+        "certificationClimate": true,
+        "price": 29,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/51Zhg8C0SBL._AC_UL320_.jpg",
+        "description": "Fibaro FGPB-101-3 US - El botón controlador de Escena Z-Wave, Blanco, Rojo, FGPB-101-3 US",
+        "calification": 5,
+        "numComments": 48,
+        "certification": false,
+        "alexa": true,
+        "certificationClimate": false,
+        "price": 48,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/61VvqSdT5OL._AC_UL320_.jpg",
+        "description": "TP-LINK Smart WiFi Switch Control Iluminación desde cualquier lugar, HS200P3",
+        "calification": 5,
+        "numComments": 1000,
+        "certification": false,
+        "alexa": false,
+        "certificationClimate": false,
+        "price": 2500,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/61QWewnUl5L._AC_UL320_.jpg",
+        "description": "Lutron Caseta - Interruptor inteligente de atenuación para el hogar",
+        "calification": 5,
+        "numComments": 48,
+        "certification": false,
+        "alexa": true,
+        "certificationClimate": false,
+        "price": 29,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71q1mvos8SL._AC_UL320_.jpg",
+        "description": "BAZZ Smart Home - Bombilla LED BR30 con Wi-Fi RGB de 10 W (paquete de 4)",
+        "calification": 5,
+        "numComments": 78,
+        "certification": false,
+        "alexa": false,
+        "certificationClimate": false,
+        "price": 700,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71oZlpY3p+L._AC_UL320_.jpg",
+        "description": "TP-LINK Smart WiFi Switch Control Iluminación desde cualquier lugar, HS220",
+        "calification": 5,
+        "numComments": 1,
+        "certification": false,
+        "alexa": true,
+        "certificationClimate": false,
+        "price": 5,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/51k3isWiddL._AC_UL320_.jpg",
+        "description": "Control remoto Lutron Pico con configuración favorita, PJ2-3BRL-WH-L01R",
+        "calification": 5,
+        "numComments": 0,
+        "certification": false,
+        "alexa": false,
+        "certificationClimate": false,
+        "price": 29,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71BiWCDxLNL._AC_UL320_.jpg",
+        "description": "GE Lighting Cync - Bombillas inteligentes LED A19 a todo color con Bluetooth y Wi-Fi, repuesto de 60 W, compatible con Alexa + Google Home...",
+        "calification": 5,
+        "numComments": 24,
+        "certification": false,
+        "alexa": true,
+        "certificationClimate": false,
+        "price": 29,
+        "starRatings": 4.7
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71kqfL6CD-L._AC_UL320_.jpg",
+        "description": "DAYBETTER - Luces LED inteligentes con WiFi de 100 pies, tira de luces LED controladas por la aplicación Tuya, funciona con Alexa y Google Assistant,",
+        "calification": 5,
+        "numComments": 37,
+        "certification": false,
+        "alexa": true,
+        "certificationClimate": false,
+        "price": 29,
+        "starRatings": 4.7
+    }
+]
+
+###
+GET http://localhost:9000/api/products HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/products HTTP/1.1
