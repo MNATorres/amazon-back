@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const userRoutes = require("./src/routes/products");
+const cors = require('cors');
+
 //comment
 
 const app = express();
@@ -10,15 +12,24 @@ const PORT = process.env.PORT || 9000;
 console.log("1");
 
 //midelware
+app.use(cors());
 app.use(express.json());
 app.use('/api', userRoutes);
 
 console.log("2");
 
+const corsOptions = {
+  origin: 'https://mnatorres.github.io',
+  optionsSuccessStatus: 200 
+};
+
+app.use(cors(corsOptions));
+
 
 //routes
 app.get('/', (req, res) => {
-    res.send("Bienvenidos a mi Api")
+    res.header('Access-Control-Allow-Origin', 'https://mnatorres.github.io');
+    res.send("Bienvenidos a mi Api");
 })
 
 console.log("3");
